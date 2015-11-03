@@ -30,3 +30,15 @@ For more information about App Service plans, see [Azure App Service plans in-de
 8. Click **作成**.  
 ![Create a web app](https://lh6.googleusercontent.com/-Xpiene9r-WA/ViTJCywRCTI/AAAAAAAABuA/MQT2ClJihzk/w2030-h1422-no/image151018-02.png)  
 In a short time, typically less than a minute, Azure finishes creating the new web app.
+9. Click **Web Apps > {your new web app}**.  
+![Enable Git publishing 1](https://lh3.googleusercontent.com/-jZy_TwAKBeU/ViTJC2VXiqI/AAAAAAAABt8/XZChBYssHA8/w2048-h1138-no/image151018-03.png)
+10. Click **継続的なデプロイ**, and then click **ソースの選択**.
+11. Click **ローカル Git リポジトリ**, and then click **OK**.  
+![Enable Git publishing 2](https://lh6.googleusercontent.com/-YQKxYgpGktc/ViTJC3q4M4I/AAAAAAAABt8/5uvQspD4wxU/w2048-h1276-no/image151018-04.png)
+12. Click **デプロイ資格情報**.
+13. Set up deployment credentials if you haven't already done so.  
+Create a user name and password, and then click **保存**.  
+![Enable Git publishing 3](https://lh4.googleusercontent.com/-aIUJi0gfGgc/ViTJC6pUD0I/AAAAAAAABt8/o18KA3cTiJo/w2048-h1322-no/image151018-05.png)
+14. Click **Web Apps > {your new web app}**.  
+To publish, you'll push to a remote Git repository. The URL for the repository is listed under **GIT クローン URL**. You'll use this URL later in the tutorial.  
+![Enable Git publishing 4](https://lh3.googleusercontent.com/-B1pZOVUChXg/ViTJCwMoBiI/AAAAAAAABt8/TEolMFSFgZU/w1382-h1422-no/image151018-06.png)
