@@ -47,3 +47,22 @@ To publish, you'll push to a remote Git repository. The URL for the repository i
 15. Click **URL**.  
 A webpage that displays "This web app has been successfully created" appears, as shown in the following screenshot.  
 ![Enable Git publishing 5](https://lh4.googleusercontent.com/-1qbpll_dUuk/ViTJCxLpIaI/AAAAAAAABt8/iZRuhbCWISw/w1794-h1422-no/image151018-07.png)
+
+## Create a simple Node.js application
+
+In this section, you'll create a [server.js](https://nodejs.org/en/about/) file that contains a slightly modified version of the 'Hello World' example from [nodejs.org](https://nodejs.org/en/). The code adds `process.env.PORT` as the port to listen on when running in an Azure App Service.
+
+1. Create a directory named `helloworld`.
+2. Use a text editor to create a new file named `server.js` in the `helloworld` directory.
+3. Copy the following code into the `server.js` file, and then save the file:  
+    var http = require('http');
+    var port = process.env.PORT || 1337;
+    http.createServer(function (req, res) {
+      res.writeHead(200, {'Content-Type': 'text/plain'});
+      res.end('Hello World\n');
+    }).listen(port);
+4. Open the command line, and use the following command to start the web app locally.  
+    $ node server.js
+5. Open your web browser and navigate to http://localhost:1337.  
+A webpage that displays "Hello World" appears, as shown in the following screenshot.  
+![Create a simple Node.js application](https://lh3.googleusercontent.com/-BUKMgxa2Fbk/ViTJC9w0EQI/AAAAAAAABuA/E7ZL5YbdSpg/w2048-h308-no/image151018-08.png)
