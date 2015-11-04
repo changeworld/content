@@ -40,5 +40,5 @@ In a short time, typically less than a minute, Azure finishes creating the new w
 Create a user name and password, and then click **保存**.  
 ![Enable Git publishing 3](https://lh4.googleusercontent.com/-aIUJi0gfGgc/ViTJC6pUD0I/AAAAAAAABt8/o18KA3cTiJo/w2048-h1322-no/image151018-05.png)
 14. Click **Web Apps > {your new web app}**.  
-To publish, you'll push to a remote Git repository. The URL for the repository is listed under **GIT クローン URL**. You'll use this URL later in the tutorial.  
+To publish, you'll push to a remote Git repository. The URL for the repository is listed under **Git クローン URL**. You'll use this URL later in the tutorial.  
 ![Enable Git publishing 4](https://lh3.googleusercontent.com/-B1pZOVUChXg/ViTJCwMoBiI/AAAAAAAABt8/TEolMFSFgZU/w1382-h1422-no/image151018-06.png)
