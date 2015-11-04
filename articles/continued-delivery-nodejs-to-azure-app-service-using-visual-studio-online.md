@@ -98,3 +98,26 @@ Enter `push azure master` in the **Arguments** box.
 ![Create a Build Definition 6](https://lh5.googleusercontent.com/-sdKZknViZYw/ViTJCwC7U7I/AAAAAAAABuA/BIntiP7VDS8/w2048-h924-no/image151018-16.png)
 15. Enter a name for the build eefinition in the **Name** box, and then click the **OK**.  
 ![Create a Build Definition 7](https://lh5.googleusercontent.com/-AtuY3U8g7IM/ViTJCzm28sI/AAAAAAAABuA/JLU4Uj9Q12I/w2048-h980-no/image151018-17.png)
+
+## Publish your application
+
+1. Install `Git` if you haven't already done so.  
+For installation instructions for your platform, see the [Git download page](http://git-scm.com/download).
+2. From the command line, change directories to the `helloworld` directory and enter the following command to initialize a local Git repository.
+    $ git init
+3. Use the following commands to add files to the repository:
+    $ git add .
+    $ git commit -m "Initial commit"
+4. Add a Git remote for pushing updates to the Visual Studio Online that you created previously, by using the following command:
+    $ git remote add azure https://{your_account}.visualstudio.com/DefaultCollection/_git/{your_team_project}
+5. Push your changes to Azure by using the following command:
+    $ git push azure master
+6. Open your team project in your web browser.
+7. Click the **BUILD**.  
+![Publish your application 1](https://lh3.googleusercontent.com/-wC0DL-cmz64/ViTJCxWB_jI/AAAAAAAABuA/qlDBAqJv5RY/w2048-h944-no/image151018-18.png)
+8. Click the **Queued**.  
+![Publish your application 2](https://lh6.googleusercontent.com/-DEPlbTU4EBU/ViTJC-2FpdI/AAAAAAAABuA/OGxF7Wp5cXg/w2048-h688-no/image151018-19.png)
+9. After a successful build, click the **Completed**.
+![Publish your application 3](https://lh3.googleusercontent.com/-tK-nzdGowZE/ViTJC_2IYsI/AAAAAAAABuA/t7oOqBk5HV8/w2048-h696-no/image151018-20.png)
+10. Check your site: http://{your new web app}.azurewebsites.net
+![Publish your application 4](https://lh4.googleusercontent.com/-DGNFXXFbkaA/ViTJC8lNWSI/AAAAAAAABuA/xxEDVobJMLw/w2048-h350-no/image151018-21.png)
