@@ -121,3 +121,13 @@ For installation instructions for your platform, see the [Git download page](htt
 ![Publish your application 3](https://lh3.googleusercontent.com/-tK-nzdGowZE/ViTJC_2IYsI/AAAAAAAABuA/t7oOqBk5HV8/w2048-h696-no/image151018-20.png)
 10. Check your site: http://{your new web app}.azurewebsites.net
 ![Publish your application 4](https://lh4.googleusercontent.com/-DGNFXXFbkaA/ViTJC8lNWSI/AAAAAAAABuA/xxEDVobJMLw/w2048-h350-no/image151018-21.png)
+
+## Publish changes to your application
+
+1. Open the **server.js** file in a text editor, and change 'Hello World\n' to 'Hello Azure\n'.
+2. Save the file.
+3. From the command line, change directories to the `helloworld` directory and run the following commands:
+    $ git add .
+    $ git commit -m "Modify Hello World -> Hello Azure"
+    $ git push azure master
+4. Refresh the browser window that you navigated to the web app's URL. A browser displaying the 'Hello Azure' message.
