@@ -44,3 +44,6 @@ Create a user name and password, and then click **保存**.
 14. Click **Web Apps > {your new web app}**.  
 To publish, you'll push to a remote Git repository. The URL for the repository is listed under **Git クローン URL**. You'll use this URL later in the tutorial.  
 ![Enable Git publishing 4](https://lh3.googleusercontent.com/-B1pZOVUChXg/ViTJCwMoBiI/AAAAAAAABt8/TEolMFSFgZU/w1382-h1422-no/image151018-06.png)
+15. Click **URL**.  
+A webpage that displays "This web app has been successfully created" appears, as shown in the following screenshot.  
+![Enable Git publishing 5](https://lh4.googleusercontent.com/-1qbpll_dUuk/ViTJCxLpIaI/AAAAAAAABt8/iZRuhbCWISw/w1794-h1422-no/image151018-07.png)
