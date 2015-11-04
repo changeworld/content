@@ -66,3 +66,35 @@ In this section, you'll create a [server.js](https://nodejs.org/en/about/) file 
 5. Open your web browser and navigate to http://localhost:1337.  
 A webpage that displays "Hello World" appears, as shown in the following screenshot.  
 ![Create a simple Node.js application](https://lh3.googleusercontent.com/-BUKMgxa2Fbk/ViTJC9w0EQI/AAAAAAAABuA/E7ZL5YbdSpg/w2048-h308-no/image151018-08.png)
+
+## Create a team project on Visual Studio Online and create a Build Definition
+
+1. Sign in to the [Visual Studio Online](https://www.visualstudio.com/).
+2. Click the **New**.
+3. Enter a name for the project in the **Project name** box.  
+Select an **Process template**.  
+Select `Git` from the **Version control** drop-down menu, and then Click **Create project**.  
+![Create a team project on Visual Studio Online 1](https://lh4.googleusercontent.com/-7w5nPtL8G60/ViTJC4aKpnI/AAAAAAAABuA/Qo5sWVQPTf8/w2048-h1344-no/image151018-09.png)  
+In a short time, typically less than a minute, Visual Studio Online finishes creating the new team project.
+4. Click the **Navigate to project**.  
+![Create a team project on Visual Studio Online 2](https://lh4.googleusercontent.com/-7cCyTP9bkew/ViTJC9hGXCI/AAAAAAAABuA/1ryWFKviATc/w1400-h1240-no/image151018-10.png)
+5. Click the **BUILD**.  
+![Create a Build Definition 1](https://lh4.googleusercontent.com/-fLAjAC3vH7g/ViTJC5_mdQI/AAAAAAAABuA/gRmZle-J-Zw/w1800-h1288-no/image151018-11.png)
+6. Click the **+**, and then click **Empty** to start with an empty definition, click **OK**.  
+![Create a Build Definition 2](https://lh3.googleusercontent.com/-6Mk0Sndae-A/ViTJC6hXcoI/AAAAAAAABuA/2EaieFtnrsM/w1856-h1422-no/image151018-12.png)
+7. Click the **+ Add build step…**, and then click **Utility**.
+8. Click the `Command Line's` **Add** twice, and then click **Close**.  
+![Create a Build Definition 3](https://lh5.googleusercontent.com/-lVmcgGTSoOA/ViTJC6NHf8I/AAAAAAAABuA/hwA8DwiHBao/w2048-h1352-no/image151018-13.png)
+9. Click the 1st `Command Line`.
+10. Enter `git` in the **Tool** box.  
+Enter `remote add azure https://{user name}:{password}@{your new web app}.scm.azurewebsites.net:443/{your new web app}.git` in the **Arguments** box.  
+![Create a Build Definition 4](https://lh3.googleusercontent.com/-RnMiTePopIY/ViTJC6SindI/AAAAAAAABuA/OD7yoXXeAdQ/w2048-h900-no/image151018-14.png)
+11. Click the 2nd `Command Line`.
+12. Enter `git` in the **Tool** box.  
+Enter `push azure master` in the **Arguments** box.
+13. Click the **Triggers**.  
+![Create a Build Definition 5](https://lh3.googleusercontent.com/-am3txWmBKgY/ViTJCy0pbII/AAAAAAAABuA/5X2KFgy3Jas/w2048-h902-no/image151018-15.png)
+14. Check the **Continuous integration (CI)**, and then click the **Save**.  
+![Create a Build Definition 6](https://lh5.googleusercontent.com/-sdKZknViZYw/ViTJCwC7U7I/AAAAAAAABuA/BIntiP7VDS8/w2048-h924-no/image151018-16.png)
+15. Enter a name for the build eefinition in the **Name** box, and then click the **OK**.  
+![Create a Build Definition 7](https://lh5.googleusercontent.com/-AtuY3U8g7IM/ViTJCzm28sI/AAAAAAAABuA/JLU4Uj9Q12I/w2048-h980-no/image151018-17.png)
