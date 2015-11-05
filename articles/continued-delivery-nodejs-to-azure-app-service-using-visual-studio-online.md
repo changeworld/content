@@ -20,7 +20,7 @@ The overall picture would look like the following screenshot.
 Follow these steps to create a web app in Azure App Service and enable Git publishing.
 
 1. Sign in to the [Azure preview portal](https://portal.azure.com).
-2. Click the **+ 新規** icon on the top left of the portal.
+2. Click **+ 新規** icon on the top left of the portal.
 3. Click **Web + モバイル**, and then click **Web Apps**.
 4. Enter a name for the web app in the **Web アプリ** box.  
 This name must be unique in the azurewebsites.net domain because the URL of the web app will be {name}.azurewebsites.net. If the name you enter isn't unique, a red exclamation mark appears in the text box.
@@ -50,11 +50,11 @@ A webpage that displays "This web app has been successfully created" appears, as
 
 ## Create a simple Node.js application
 
-In this section, you'll create a [server.js](https://nodejs.org/en/about/) file that contains a slightly modified version of the 'Hello World' example from [nodejs.org](https://nodejs.org/en/). The code adds `process.env.PORT` as the port to listen on when running in an Azure App Service.
+In this section, you'll create a [server.js](https://nodejs.org/en/about/) file that contains a slightly modified version of the 'Hello World' example from [nodejs.org](https://nodejs.org/en/). The code adds **process.env.PORT** as the port to listen on when running in an Azure App Service.
 
-1. Create a directory named `helloworld`.
-2. Use a text editor to create a new file named `server.js` in the `helloworld` directory.
-3. Copy the following code into the `server.js` file, and then save the file:  
+1. Create a directory named **helloworld**.
+2. Use a text editor to create a new file named **server.js** in the **helloworld** directory.
+3. Copy the following code into the **server.js** file, and then save the file:  
     var http = require('http');
     var port = process.env.PORT || 1337;
     http.createServer(function (req, res) {
@@ -70,40 +70,40 @@ A webpage that displays "Hello World" appears, as shown in the following screens
 ## Create a team project on Visual Studio Online and create a Build Definition
 
 1. Sign in to the [Visual Studio Online](https://www.visualstudio.com/).
-2. Click the **New**.
+2. Click **New**.
 3. Enter a name for the project in the **Project name** box.  
 Select an **Process template**.  
-Select `Git` from the **Version control** drop-down menu, and then Click **Create project**.  
+Select **Git** from the **Version control** drop-down menu, and then Click **Create project**.  
 ![Create a team project on Visual Studio Online 1](https://lh4.googleusercontent.com/-7w5nPtL8G60/ViTJC4aKpnI/AAAAAAAABuA/Qo5sWVQPTf8/w2048-h1344-no/image151018-09.png)  
 In a short time, typically less than a minute, Visual Studio Online finishes creating the new team project.
-4. Click the **Navigate to project**.  
+4. Click **Navigate to project**.  
 ![Create a team project on Visual Studio Online 2](https://lh4.googleusercontent.com/-7cCyTP9bkew/ViTJC9hGXCI/AAAAAAAABuA/1ryWFKviATc/w1400-h1240-no/image151018-10.png)
-5. Click the **BUILD**.  
+5. Click **BUILD**.  
 ![Create a Build Definition 1](https://lh4.googleusercontent.com/-fLAjAC3vH7g/ViTJC5_mdQI/AAAAAAAABuA/gRmZle-J-Zw/w1800-h1288-no/image151018-11.png)
-6. Click the **+**, and then click **Empty** to start with an empty definition, click **OK**.  
+6. Click **+**, and then click **Empty** to start with an empty definition, click **OK**.  
 ![Create a Build Definition 2](https://lh3.googleusercontent.com/-6Mk0Sndae-A/ViTJC6hXcoI/AAAAAAAABuA/2EaieFtnrsM/w1856-h1422-no/image151018-12.png)
-7. Click the **+ Add build step…**, and then click **Utility**.
-8. Click the `Command Line's` **Add** twice, and then click **Close**.  
+7. Click **+ Add build step…**, and then click **Utility**.
+8. Click **Command Line's** **Add** twice, and then click **Close**.  
 ![Create a Build Definition 3](https://lh5.googleusercontent.com/-lVmcgGTSoOA/ViTJC6NHf8I/AAAAAAAABuA/hwA8DwiHBao/w2048-h1352-no/image151018-13.png)
-9. Click the 1st `Command Line`.
-10. Enter `git` in the **Tool** box.  
-Enter `remote add azure https://{user name}:{password}@{your new web app}.scm.azurewebsites.net:443/{your new web app}.git` in the **Arguments** box.  
+9. Click 1st **Command Line**.
+10. Enter **git** in the **Tool** box.  
+Enter **remote add azure https://{user name}:{password}@{your new web app}.scm.azurewebsites.net:443/{your new web app}.git** in the **Arguments** box.  
 ![Create a Build Definition 4](https://lh3.googleusercontent.com/-RnMiTePopIY/ViTJC6SindI/AAAAAAAABuA/OD7yoXXeAdQ/w2048-h900-no/image151018-14.png)
-11. Click the 2nd `Command Line`.
-12. Enter `git` in the **Tool** box.  
-Enter `push azure master` in the **Arguments** box.
-13. Click the **Triggers**.  
+11. Click 2nd **Command Line**.
+12. Enter **git** in the **Tool** box.  
+Enter **push azure master** in the **Arguments** box.
+13. Click **Triggers**.  
 ![Create a Build Definition 5](https://lh3.googleusercontent.com/-am3txWmBKgY/ViTJCy0pbII/AAAAAAAABuA/5X2KFgy3Jas/w2048-h902-no/image151018-15.png)
-14. Check the **Continuous integration (CI)**, and then click the **Save**.  
+14. Check the **Continuous integration (CI)**, and then click **Save**.  
 ![Create a Build Definition 6](https://lh5.googleusercontent.com/-sdKZknViZYw/ViTJCwC7U7I/AAAAAAAABuA/BIntiP7VDS8/w2048-h924-no/image151018-16.png)
-15. Enter a name for the build eefinition in the **Name** box, and then click the **OK**.  
+15. Enter a name for the build eefinition in the **Name** box, and then click **OK**.  
 ![Create a Build Definition 7](https://lh5.googleusercontent.com/-AtuY3U8g7IM/ViTJCzm28sI/AAAAAAAABuA/JLU4Uj9Q12I/w2048-h980-no/image151018-17.png)
 
 ## Publish your application
 
-1. Install `Git` if you haven't already done so.  
+1. Install **Git** if you haven't already done so.  
 For installation instructions for your platform, see the [Git download page](http://git-scm.com/download).
-2. From the command line, change directories to the `helloworld` directory and enter the following command to initialize a local Git repository.
+2. From the command line, change directories to the **helloworld** directory and enter the following command to initialize a local Git repository.
     $ git init
 3. Use the following commands to add files to the repository:
     $ git add .
@@ -113,11 +113,11 @@ For installation instructions for your platform, see the [Git download page](htt
 5. Push your changes to Azure by using the following command:
     $ git push azure master
 6. Open your team project in your web browser.
-7. Click the **BUILD**.  
+7. Click **BUILD**.  
 ![Publish your application 1](https://lh3.googleusercontent.com/-wC0DL-cmz64/ViTJCxWB_jI/AAAAAAAABuA/qlDBAqJv5RY/w2048-h944-no/image151018-18.png)
-8. Click the **Queued**.  
+8. Click **Queued**.  
 ![Publish your application 2](https://lh6.googleusercontent.com/-DEPlbTU4EBU/ViTJC-2FpdI/AAAAAAAABuA/OGxF7Wp5cXg/w2048-h688-no/image151018-19.png)
-9. After a successful build, click the **Completed**.
+9. After a successful build, click **Completed**.
 ![Publish your application 3](https://lh3.googleusercontent.com/-tK-nzdGowZE/ViTJC_2IYsI/AAAAAAAABuA/t7oOqBk5HV8/w2048-h696-no/image151018-20.png)
 10. Check your site: http://{your new web app}.azurewebsites.net
 ![Publish your application 4](https://lh4.googleusercontent.com/-DGNFXXFbkaA/ViTJC8lNWSI/AAAAAAAABuA/xxEDVobJMLw/w2048-h350-no/image151018-21.png)
@@ -126,7 +126,7 @@ For installation instructions for your platform, see the [Git download page](htt
 
 1. Open the **server.js** file in a text editor, and change 'Hello World\n' to 'Hello Azure\n'.
 2. Save the file.
-3. From the command line, change directories to the `helloworld` directory and run the following commands:
+3. From the command line, change directories to the **helloworld** directory and run the following commands:
     $ git add .
     $ git commit -m "Modify Hello World -> Hello Azure"
     $ git push azure master
