@@ -5,13 +5,13 @@ This tutorial shows how to create a simple [Node.js](http://nodejs.org) applicat
 You'll learn:
 
 * How to create a web app in Azure App Service by using the Azure preview portal.
-* How to deploy a Node.js application to the web app by using to the Visual Studio Online.
+* How to deploy a Node.js application to the web app using Visual Studio Online.
 
 The completed application writes a short "hello world" string to the browser.
 
 ![A browser displaying the 'Hello World' message.](https://lh4.googleusercontent.com/-DGNFXXFbkaA/ViTJC8lNWSI/AAAAAAAABuA/xxEDVobJMLw/w2048-h350-no/image151018-21.png)
 
-The overall picture would look like the following screenshot.
+The overall picture will look like the following diagram.
 
 ![The overall picture.](https://lh5.googleusercontent.com/-g81UGpL3vrk/ViTJC1g4PyI/AAAAAAAABt8/fG3m-9Odfzg/w1400-h646-no/image151018-01.png)
 
@@ -69,10 +69,10 @@ A webpage that displays "Hello World" appears, as shown in the following screens
 
 ## Create a team project on Visual Studio Online and create a Build Definition
 
-1. Sign in to the [Visual Studio Online](https://www.visualstudio.com/).
+1. Sign in to [Visual Studio Online](https://www.visualstudio.com/).
 2. Click **New**.
 3. Enter a name for the project in the **Project name** box.  
-Select an **Process template**.  
+Select a **Process template**.  
 Select **Git** from the **Version control** drop-down menu, and then Click **Create project**.  
 ![Create a team project on Visual Studio Online 1](https://lh4.googleusercontent.com/-7w5nPtL8G60/ViTJC4aKpnI/AAAAAAAABuA/Qo5sWVQPTf8/w2048-h1344-no/image151018-09.png)  
 In a short time, typically less than a minute, Visual Studio Online finishes creating the new team project.
@@ -96,7 +96,7 @@ Enter **push azure master** in the **Arguments** box.
 ![Create a Build Definition 5](https://lh3.googleusercontent.com/-am3txWmBKgY/ViTJCy0pbII/AAAAAAAABuA/5X2KFgy3Jas/w2048-h902-no/image151018-15.png)
 14. Check the **Continuous integration (CI)**, and then click **Save**.  
 ![Create a Build Definition 6](https://lh5.googleusercontent.com/-sdKZknViZYw/ViTJCwC7U7I/AAAAAAAABuA/BIntiP7VDS8/w2048-h924-no/image151018-16.png)
-15. Enter a name for the build eefinition in the **Name** box, and then click **OK**.  
+15. Enter a name for the build definition in the **Name** box, and then click **OK**.  
 ![Create a Build Definition 7](https://lh5.googleusercontent.com/-AtuY3U8g7IM/ViTJCzm28sI/AAAAAAAABuA/JLU4Uj9Q12I/w2048-h980-no/image151018-17.png)
 
 ## Publish your application
