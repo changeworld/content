@@ -24,8 +24,21 @@ let me show you how to get started.
 
 ## Create a team project on Visual Studio Team Services
 ## Create a Work Items
-## Prepare a simple Node.js application
 ## Create a Build Definition
 ## Upload your application
+
+1. Install **Git** if you haven't already done so.  
+For installation instructions for your platform, see the [Git download page](http://git-scm.com/download).
+2. Use the following command. Download my simple Node.js application:
+    $ git clone {git url}
+3. Add a Git remote for pushing updates to the Visual Studio Team Services that you cloned previously, by using the following command:
+    $ git remote add azure https://{your_account}.visualstudio.com/DefaultCollection/_git/{your_team_project}
+4. Push to Azure by using the following command:
+    $ git push azure master
+5. Open your team project in your web browser.
+6. Click **BUILD**.  
+![Upload your application]()
+7. After a successful build, check your site: http://{your new web app}.azurewebsites.net
+
 ## Publish changes to your application
 ## Next Step
