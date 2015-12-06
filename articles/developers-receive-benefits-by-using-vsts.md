@@ -23,6 +23,17 @@ that pass tests.
 let me show you how to get started.
 
 ## Create a team project on Visual Studio Team Services
+
+1. Sign in to [Visual Studio Online](https://www.visualstudio.com/).
+2. Click **New**.
+3. Enter a name for the project in the **Project name** box.  
+Select a **Process template**.  
+Select **Git** from the **Version control** drop-down menu, and then Click **Create project**.  
+![Create a team project on Visual Studio Team Services 1]()  
+In a short time, typically less than a minute, Visual Studio Team Services finishes creating the new team project.
+4. Click **Navigate to project**.  
+![Create a team project on Visual Studio Team Services 2]()
+
 ## Create a Work Items
 ## Create a Build Definition
 ## Upload your application
