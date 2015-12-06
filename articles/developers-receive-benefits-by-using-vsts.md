@@ -22,3 +22,10 @@ that pass tests.
 
 let me show you how to get started.
 
+## Create a team project on Visual Studio Team Services
+## Create a Work Items
+## Prepare a simple Node.js application
+## Create a Build Definition
+## Upload your application
+## Publish changes to your application
+## Next Step
