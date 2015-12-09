@@ -5,26 +5,22 @@ Visual Studio Team Services offers the solutions required for all of the steps o
 If you use the Visual Studio Team Services, you can get for free the following benefits. Moreover, you can access from anywhere in the world.
 
 * Planning and tracking of project, tracking of issues
-  * Capture, prioritize, and track work with backlogs and
-customizable Kanban boards.
-  * Work items link directly to code to ensure transparency.
+    * Capture, prioritize, and track work with backlogs and customizable Kanban boards.
+    * Work items link directly to code to ensure transparency.
 * Management of source code
-  * Store and collaborate on code with unlimited private repositories.
-  * Use Git for distributed version control to maximize collaboration.
+    * Store and collaborate on code with unlimited private repositories.
+    * Use Git for distributed version control to maximize collaboration.
 * Automated build, automated testing, automated deployment
-  * Catch quality issues early with continuous integration (CI)
-builds that compile and test your application automatically after any
-code change.
-  * Use continuous deployment to automatically deploy applications
-that pass tests.
+    * Catch quality issues early with continuous integration (CI) builds that compile and test your application automatically after any code change.
+    * Use continuous deployment to automatically deploy applications that pass tests.
 * You can collaborate with team members
-* Cloud-based load test
+* Cloud-based load testing
 
-let me show you how to get started.
+Let me show you how to get started.
 
 ## Create a team project on Visual Studio Team Services
 
-1. Sign in to [Visual Studio Online](https://www.visualstudio.com/).
+1. Sign in to [Visual Studio Team Services](https://www.visualstudio.com/).
 2. Click **New**.  
 ![Create a team project on Visual Studio Team Services 1](../images/image001.png)
 3. Enter a name for the project in the **Project name** box.  
@@ -38,9 +34,9 @@ In a short time, typically less than a minute, Visual Studio Team Services finis
 
 1. Click **WORK**.  
 ![Create work items 1](../images/image003.png)
-2. Click **+ New item**, then click **Product Backlog Item**  
+2. Click **+ New item**, then click **Product Backlog Item**.  
 ![Create work items 2](../images/image004.png)
-3. Enter *As a deeveloper, I want to get Visual Studio Team Services's benefits*
+3. Enter *As a deeveloper, I want to get Visual Studio Team Services's benefits*.
 4. Click **…**, then click **+ Add task**.  
 ![Create work items 3](../images/image005.png)  
 ![Create work items 4](../images/image006.png)
