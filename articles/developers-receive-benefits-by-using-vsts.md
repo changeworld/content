@@ -37,9 +37,13 @@ In a short time, typically less than a minute, Visual Studio Team Services finis
 ## Create work items
 
 1. Click **WORK**.  
-2. Click **+ New item**, then click **Product Backlog Item**
+![Create work items 1](../images/image003.png)
+2. Click **+ New item**, then click **Product Backlog Item**  
+![Create work items 2](../images/image004.png)
 3. Enter *As a deeveloper, I want to get Visual Studio Team Services's benefits*
-4. Click **…**, then click **+ Add task**.
+4. Click **…**, then click **+ Add task**.  
+![Create work items 3](../images/image005.png)  
+![Create work items 4](../images/image006.png)
 5. Enter *Create a build definition*, then enter *Management of source code*.
 6. Click **Create a build definition**, then note the task number.
 
