@@ -25,16 +25,18 @@ let me show you how to get started.
 ## Create a team project on Visual Studio Team Services
 
 1. Sign in to [Visual Studio Online](https://www.visualstudio.com/).
-2. Click **New**.
+2. Click **New**.  
+![Create a team project on Visual Studio Team Services 1](../images/image001.png)
 3. Enter a name for the project in the **Project name** box.  
 Select a **Process template**.  
-Select **Git** from the **Version control** drop-down menu, and then Click **Create project**.  
-In a short time, typically less than a minute, Visual Studio Team Services finishes creating the new team project.
+Select **Git** from the **Version control** drop-down menu, and then click **Create project**.  
+In a short time, typically less than a minute, Visual Studio Team Services finishes creating the new team project.  
+![Create a team project on Visual Studio Team Services 2](../images/image002.png)
 4. Click **Navigate to project**.
 
 ## Create work items
 
-1. Click **WORK**.
+1. Click **WORK**.  
 2. Click **+ New item**, then click **Product Backlog Item**
 3. Enter *As a deeveloper, I want to get Visual Studio Team Services's benefits*
 4. Click **…**, then click **+ Add task**.
