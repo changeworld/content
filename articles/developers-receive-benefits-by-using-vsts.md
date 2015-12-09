@@ -11,7 +11,7 @@ customizable Kanban boards.
 * Management of source code
   * Store and collaborate on code with unlimited private repositories.
   * Use Git for distributed version control to maximize collaboration.
-* Automated build, automated testing, automatic deployment
+* Automated build, automated testing, automated deployment
   * Catch quality issues early with continuous integration (CI)
 builds that compile and test your application automatically after any
 code change.
@@ -32,8 +32,8 @@ Select **Git** from the **Version control** drop-down menu, and then Click **Cre
 In a short time, typically less than a minute, Visual Studio Team Services finishes creating the new team project.
 4. Click **Navigate to project**.
 
-## Create a Work Items
-## Create a Build Definition
+## Create work items
+## Create a build definition
 
 1. Click **BUILD**.
 2. Click **+**, and then click **Empty** to start with an empty definition, click **Next**.
