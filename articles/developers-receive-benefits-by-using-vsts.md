@@ -95,15 +95,23 @@ Tip: The name you enter must be unique or the name of an Azure Web App you have 
 
 1. Install **Git** if you haven't already done so.  
 For installation instructions for your platform, see the [Git download page](http://git-scm.com/download).
-2. Use the following command. Download my simple Node.js application:
+2. Run the following command. Download my simple Node.js application:
     $ git clone https://github.com/changeworld/hello-world-nodejs-express.git
 3. Add a Git remote for pushing updates to the Visual Studio Team Services that you cloned previously, by using the following command:
+    $ cd hello-world-nodejs-express
     $ git remote add azure https://{your_account}.visualstudio.com/DefaultCollection/_git/{your_team_project}
-4. Push to Azure by using the following command:
+4. Open the *hello-world-nodejs-express/server.js* file in a text editor, and add empty line.
+5. Use the following commands to add files to the repository:
+    $ git add .
+    $ git commit -m "Management of source code #task2"
+6. Push to Azure by using the following command:
     $ git push azure master
-5. Open your team project in your web browser.
-6. Click **BUILD**.
-7. After a successful build, check your site: http://{your new web app}.azurewebsites.net
+7. Open your team project in your web browser.
+8. Click **BUILD**.
+9. After a successful build, click build number and check your site: http://{your web app name}.azurewebsites.net  
+![Upload your application 1](../images/image020.png)  
+![Upload your application 2](../images/image021.png)  
+![Upload your application 3](../images/image022.png)  
 
 ## Publish changes to your application
 ## Next Step
