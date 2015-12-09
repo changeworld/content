@@ -52,29 +52,43 @@ Tip: "As a deeveloper, …" is NOT a User Story. Here I use this description as 
 ## Create a build definition
 
 1. Click **BUILD**.
-2. Click **+**, and then click **Empty** to start with an empty definition, click **Next**.
-3. Check the **Continuous integration : build each check-in**, and then click **Create**.
-4. Click **+ Add build step…**, and then click **Package**.
-5. Click **npm's** **Add**, and then click **Build**.
-6. Click **gulp's** **Add**, and then click **Test**.
-7. Click **Publish Test Results's** **Add**, and then click **Deploy**.
-8. Click **Azure Web App Deployment's** **Add**, and then click **Close**.
+2. Click **+**, and then click **Empty** to start with an empty definition, click **Next**.  
+![Create a build definition 1](../images/image007.png)  
+![Create a build definition 2](../images/image008.png)
+3. Check the **Continuous integration : build each check-in**, and then click **Create**.  
+![Create a build definition 3](../images/image009.png)
+4. Click **+ Add build step…**.  
+![Create a build definition 4](../images/image010.png)
+5. Click **Package**, then click **npm's** **Add**.  
+![Create a build definition 5](../images/image011.png)
+6. Click **Build**, then click **gulp's** **Add**.  
+![Create a build definition 6](../images/image012.png)
+7. Click **Test**, then click **Publish Test Results's** **Add**.  
+![Create a build definition 7](../images/image013.png)
+8. Click **Deploy**, then click **Azure Web App Deployment's** **Add**, and then click **Close**.  
+![Create a build definition 8](../images/image014.png)
 9. Click **Publish Test Results**.
-10. Enter *test-results.xml* in the **Test Results Files** box.
+10. Enter *test-results.xml* in the **Test Results Files** box.  
+![Create a build definition 9](../images/image015.png)
 11. Click **Azure Web App Deployment**.
 12. Select **Azure Subscription**.  
 Make sure the subscription you want to use is selected. If a subscription is not available, then add a service endpoint:
-  1. Click **Manage**.
-  2. Click **New Service Endpoint**, and then click **Azure**.
+  1. Click **Manage**.  
+  ![Create a build definition 10](../images/image016.png)
+  2. Click **New Service Endpoint**, and then click **Azure**.  
+  ![Create a build definition 11](../images/image017.png)
   3. On the Add New Azure Connection dialog box:
       1. Select **Certificate Base**.
       2. Enter the name in the **Connection Name** box.
       3. Click this [link](https://go.microsoft.com/fwlink/?LinkId=254432) to download your publishsettings xml file and then open the file.
-      4. Copy the ID and Name, ManagementCertificate from the file and paste them into the Add New Azure Connection dialog.
+      4. Copy the ID and Name, ManagementCertificate from the file and paste them into the Add New Azure Connection dialog.  
+      ![Create a build definition 12](../images/image018.png)
+      5. Click **OK**.
 13. Enter the name in the **Web App Name** box.  
 Tip: The name you enter must be unique or the name of an Azure Web App you have already created. Azure will create the Web App for you and add it to your subscription if it does not already exist.
-14. Enter *$(Build.StagingDirectory)/package.zip* in the **Web Deploy Packagee**
-15. Click **Save**.
+14. Enter *_package/package.zip* in the **Web Deploy Packagee**
+15. Click **Save**.  
+![Create a build definition 13](../images/image019.png)
 16. Enter a name for the build definition in the **Name** box, and then click **OK**.
 
 ## Upload your application
