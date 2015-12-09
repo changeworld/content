@@ -33,6 +33,16 @@ In a short time, typically less than a minute, Visual Studio Team Services finis
 4. Click **Navigate to project**.
 
 ## Create work items
+
+1. Click **WORK**.
+2. Click **+ New item**, then click **Product Backlog Item**
+3. Enter *As a deeveloper, I want to get Visual Studio Team Services's benefits*
+4. Click **…**, then click **+ Add task**.
+5. Enter *Create a build definition*, then enter *Management of source code*.
+6. Click **Create a build definition**, then note the task number.
+
+Tip: "As a deeveloper, …" is NOT a User Story. Here I use this description as a sample.
+
 ## Create a build definition
 
 1. Click **BUILD**.
