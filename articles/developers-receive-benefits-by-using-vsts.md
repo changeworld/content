@@ -114,4 +114,17 @@ For installation instructions for your platform, see the [Git download page](htt
 ![Upload your application 3](../images/image022.png)  
 
 ## Publish changes to your application
-## Next Step
+
+1. Open the *hello-world-nodejs-express/routes/index.js* file in a text editor, and change 'Hello, world!' to 'Hello, Azure!'.
+2. Save the file.
+3. Publish to Azure by using the following command:
+    $ git add .
+    $ git commit -m "Modify Hello World -> Hello Azure"
+    $ git push azure master
+4. Open your team project in your web browser.
+5. Click **BUILD**.
+6. After a successful build, refresh the browser window that you navigated to the web app's URL. A browser displaying the 'Hello, Azure!' message.  
+![Upload your application 1](../images/image023.png)  
+![Upload your application 2](../images/image024.png)
+
+Enjoy your development, have fun ;-)
