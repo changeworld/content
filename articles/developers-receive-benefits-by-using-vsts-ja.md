@@ -112,7 +112,7 @@ Tip: ここであなたが入力した名前は一意か、既に作成済みの
 
 ## あなたのアプリケーションの変更を公開する
 
-1. *hello-world-nodejs-express/routes/index.js*ファイルをエディターで開、'Hello, world!'を'Hello, Azure!'に変更後、保存する。
+1. *hello-world-nodejs-express/routes/index.js*ファイルをエディターで開き、'Hello, world!'を'Hello, Azure!'に変更後、保存する。
 2. 以下のコマンドを使用して、Azureにpushする:
     $ git add .
     $ git commit -m "Modify Hello World -> Hello Azure"
