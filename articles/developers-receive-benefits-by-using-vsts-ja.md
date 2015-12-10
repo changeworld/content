@@ -1,22 +1,24 @@
 # Developers receive Benefits by using the Visual Studio Team Services
 
-Visual Studio Team Services is a cloud-based ALM solutions.
-Visual Studio Team Services offers the solutions required for all of the steps of software development.
-If you use the Visual Studio Team Services, you can get for free the following benefits. Moreover, you can access from anywhere in the world.
+Visual Studio Team ServicesはクラウドベースのALMソリューションです。
+Visual Studio Team Servicesはソフトウェア開発のすべての工程で必要となるソリューションを提供します。
+Visual Studio Team Servicesを使うと、以下の利点をすべて無料で享受できます。
+さらに、Visual Studio Team Servicesには世界のどこからでもアクセスすることができるのです。
 
-* Planning and tracking of project, tracking of issues
-    * Capture, prioritize, and track work with backlogs and customizable Kanban boards.
-    * Work items link directly to code to ensure transparency.
-* Management of source code
-    * Store and collaborate on code with unlimited private repositories.
-    * Use Git for distributed version control to maximize collaboration.
-* Automated build, automated testing, automated deployment
+* プロジェクトの計画と追跡、問題の追跡
+    * バックログとカスタマイズ可能なカンバンボードを使用して、作業のキャプチャ、優先順位付け、追跡を行えます。
+    * 作業項目は、透過性を確保するためにコードに直接リンクされます。
+* バージョン管理
+    * 無制限に作成できるプライベートリポジトリにコードを保存でき、コードの共同作業を行います。
+    * 分散バージョン管理にGitを使用し、共同作業を最大化できます。
+* 自動ビルド、自動テスト、自動デプロイ
     * Catch quality issues early with continuous integration (CI) builds that compile and test your application automatically after any code change.
-    * Use continuous deployment to automatically deploy applications that pass tests.
-* You can collaborate with team members
-* Cloud-based load testing
+    * コード変更後、自動的にアプリケーションをコンパイルし、テストを行う継続的インテグレーション(CI)によって早期に品質の問題を検出できます。
+    * 継続的デプロイ/デリバリーによって、テストに合格したアプリケーションを自動的にデプロイできます。
+* プロジェクトのチームメンバーが効率的に作業できるようにコラボレーションツールを提供します。
+* クラウドベースのロードテストによって、アプリケーションを常に機能する状態に維持できます。
 
-Let me show you how to get started.
+それでは、どうすれば使うことができるのか、お見せしましょう。
 
 ## Visual Studio Team Servicesにチームプロジェクトを作成する
 
@@ -120,5 +122,3 @@ Tip: ここであなたが入力した名前は一意か、既に作成済みの
 5. ビルド成功後、ビルド番号をクリックし、その後、あなたのWebサイト: http://{your web app name}.azurewebsites.net をリロードする。ブラウザには'Hello, Azure!'と表示される。  
 ![Upload your application 1](https://lh3.googleusercontent.com/-j826snN-trg/VmishnAWyJI/AAAAAAAAB64/Oov-N4ENo-I/s640-Ic42/image023.png)  
 ![Upload your application 2](https://lh3.googleusercontent.com/-l8YCj91UY6s/Vmish5R2a3I/AAAAAAAAB7A/9hEQJsoUjug/s640-Ic42/image024.png)
-
-Enjoy your development, have fun ;-)
