@@ -108,17 +108,16 @@ Tip: ここであなたが入力した名前は一意か、既に作成済みの
 ![Upload your application 1](https://lh3.googleusercontent.com/-Gtesh_MM0tA/VmishLC_EnI/AAAAAAAAB7E/tO6Q4rgcNSw/s640-Ic42/image021.png)  
 ![Upload your application 2](https://lh3.googleusercontent.com/-2jJU7iR63Vc/VmishU_HZuI/AAAAAAAAB6s/v683cG5R_8s/s640-Ic42/image022.png)
 
-## Publish changes to your application
+## あなたのアプリケーションの変更を公開する
 
-1. Open the *hello-world-nodejs-express/routes/index.js* file in a text editor, and change 'Hello, world!' to 'Hello, Azure!'.
-2. Save the file.
-3. Publish to Azure by using the following command:
+1. *hello-world-nodejs-express/routes/index.js*ファイルをエディターで開、'Hello, world!'を'Hello, Azure!'に変更後、保存する。
+2. 以下のコマンドを使用して、Azureにpushする:
     $ git add .
     $ git commit -m "Modify Hello World -> Hello Azure"
     $ git push azure master
-4. Open your team project in your web browser.
-5. Click **BUILD**.
-6. After a successful build, refresh the browser window that you navigated to the web app's URL. A browser displaying the 'Hello, Azure!' message.  
+3. あなたのチームプロジェクトをブラウザ上で開く。
+4. **BUILD**をクリックする。
+5. ビルド成功後、ビルド番号をクリックし、その後、あなたのWebサイト: http://{your web app name}.azurewebsites.net をリロードする。ブラウザには'Hello, Azure!'と表示される。  
 ![Upload your application 1](https://lh3.googleusercontent.com/-j826snN-trg/VmishnAWyJI/AAAAAAAAB64/Oov-N4ENo-I/s640-Ic42/image023.png)  
 ![Upload your application 2](https://lh3.googleusercontent.com/-l8YCj91UY6s/Vmish5R2a3I/AAAAAAAAB7A/9hEQJsoUjug/s640-Ic42/image024.png)
 
