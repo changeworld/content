@@ -18,7 +18,7 @@ If you use the Visual Studio Team Services, you can get for free the following b
 
 Let me show you how to get started.
 
-## Visual Studio Team Servicesにチームプロジェクトを作成
+## Visual Studio Team Servicesにチームプロジェクトを作成する
 
 1. [Visual Studio Team Services](https://www.visualstudio.com/)にサインインします。
 2. **New**をクリックします。  
@@ -30,20 +30,20 @@ Let me show you how to get started.
 ![Create a team project on Visual Studio Team Services 2](https://lh3.googleusercontent.com/-EQf8-fCD4_s/Vmisc1lVH4I/AAAAAAAAB7I/Vyy0jK7QgEI/s640-Ic42/image002.png)
 4. **Navigate to project**をクリックします。
 
-## Create work items
+## Work itemを作成する
 
-1. Click **WORK**.  
+1. **WORK**をクリックする。  
 ![Create work items 1](https://lh3.googleusercontent.com/-54nmXwTHK1E/VmiscmJoUjI/AAAAAAAAB4w/oh0Y3WjGFxI/s640-Ic42/image003.png)
-2. Click **+ New item**, then click **Product Backlog Item**.  
+2. **+ New item**をクリック後、**Product Backlog Item**をクリックする。  
 ![Create work items 2](https://lh3.googleusercontent.com/-CIQzn2puEfE/VmisdOdM5BI/AAAAAAAAB7M/j1ggFeOe2GE/s640-Ic42/image004.png)
-3. Enter *As a deeveloper, I want to get Visual Studio Team Services's benefits*.
-4. Click **…**, then click **+ Add task**.  
+3. *As a deeveloper, I want to get Visual Studio Team Services's benefits*と入力する。
+4. **…**をクリック後、**+ Add task**をクリックする。  
 ![Create work items 3](https://lh3.googleusercontent.com/-Va-rbsaskXI/VmisdTaVw5I/AAAAAAAAB6I/va14EhT1ji4/s640-Ic42/image005.png)  
 ![Create work items 4](https://lh3.googleusercontent.com/-x92_rXABQns/VmisdVwu1FI/AAAAAAAAB48/x9xx3K0kNi0/s640-Ic42/image006.png)
-5. Enter *Create a build definition*, then enter *Management of source code*.
-6. Click **Create a build definition**, then note the task number.
+5. *Create a build definition*を入力したらリターンキーを押下し、*Management of source code*を入力する。
+6. **Create a build definition**をクリック後、番号をメモする。
 
-Tip: "As a deeveloper, …" is NOT a User Story. Here I use this description as a sample.
+Tip: "As a deeveloper, …"のような"開発者として…"は厳密にはユーザーストーリーではありません。ここでは説明のためのサンプルとしてこの記述を使っています。
 
 ## Create a build definition
 
