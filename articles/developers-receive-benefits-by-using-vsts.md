@@ -82,7 +82,7 @@ Make sure the subscription you want to use is selected. If a subscription is not
       5. Click **OK**.
 13. Enter the name in the **Web App Name** box.  
 Tip: The name you enter must be unique or the name of an Azure Web App you have already created. Azure will create the Web App for you and add it to your subscription if it does not already exist.
-14. Enter *_package/package.zip* in the **Web Deploy Packagee**
+14. Enter *_package/package.zip* in the **Web Deploy Packagee**.
 15. Click **Save**.  
 ![Create a build definition 13](../images/image019.png)
 16. Enter a name for the build definition in the **Name** box, and then click **OK**.
