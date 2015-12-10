@@ -87,24 +87,24 @@ Tip: ここであなたが入力した名前は一意か、既に作成済みの
 ![Create a build definition 13](https://lh3.googleusercontent.com/-ytPyQVUuxic/VmisgiUYOHI/AAAAAAAAB6U/WZRO5PVdlwI/s640-Ic42/image019.png)
 16. **Name**にビルド定義の名前を入力後、**OK**をクリックする。
 
-## Upload your application
+## あなたのアプリケーションをアップロードする
 
-1. Install **Git** if you haven't already done so.  
-For installation instructions for your platform, see the [Git download page](http://git-scm.com/download).
-2. Run the following command. Download my simple Node.js application:
+1. あなたが**Git**をインストールしていない場合、**Git**をインストールする。  
+使用しているプラットフォームのインストール手順については、[Git download page](http://git-scm.com/download)を参照する。
+2. 私のシンプルなNode.jsアプリケーションをダウンロードするため、以下のコマンドを実行する:
     $ git clone https://github.com/changeworld/hello-world-nodejs-express.git
-3. Add a Git remote for pushing updates to the Visual Studio Team Services that you cloned previously, by using the following command:
+3. 以下のコマンドを使用して、先程クローンしたアプリケーションの更新をVisual Studio Team Servicesに反映するためにのGitのリモートを追加する:
     $ cd hello-world-nodejs-express
     $ git remote add azure https://{your_account}.visualstudio.com/DefaultCollection/_git/{your_team_project}
-4. Open the *hello-world-nodejs-express/server.js* file in a text editor, and add empty line.
-5. Use the following commands to add files to the repository:
+4. *hello-world-nodejs-express/server.js*ファイルをエディターで開き、空行を追加する。
+5. 以下のコマンドを使用して、リポジトリにファイルを追加する:
     $ git add .
     $ git commit -m "Management of source code #{copy the task number}"
-6. Push to Azure by using the following command:
+6. 以下のコマンドを使用して、Azureにpushする:
     $ git push azure master
-7. Open your team project in your web browser.
-8. Click **BUILD**.
-9. After a successful build, click build number and check your site: http://{your web app name}.azurewebsites.net  
+7. あなたのチームプロジェクトをブラウザ上で開く。
+8. **BUILD**をクリックする。
+9. ビルド成功後、ビルド番号をクリックし、その後、あなたのWebサイト: http://{your web app name}.azurewebsites.net をチェックする。  
 ![Upload your application 1](https://lh3.googleusercontent.com/-Gtesh_MM0tA/VmishLC_EnI/AAAAAAAAB7E/tO6Q4rgcNSw/s640-Ic42/image021.png)  
 ![Upload your application 2](https://lh3.googleusercontent.com/-2jJU7iR63Vc/VmishU_HZuI/AAAAAAAAB6s/v683cG5R_8s/s640-Ic42/image022.png)
 
