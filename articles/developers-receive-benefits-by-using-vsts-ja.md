@@ -45,47 +45,47 @@ Let me show you how to get started.
 
 Tip: "As a deeveloper, …"のような"開発者として…"は厳密にはユーザーストーリーではありません。ここでは説明のためのサンプルとしてこの記述を使っています。
 
-## Create a build definition
+## ビルド定義を作成する
 
-1. Click **BUILD**.
-2. Click **+**, and then click **Empty** to start with an empty definition, click **Next**.  
+1. **BUILD**をクリックする。
+2. **+**をクリック後、**Empty**をクリックし、続けて**Next**をクリックする。  
 ![Create a build definition 1](https://lh3.googleusercontent.com/-qOPGt_YUKfk/VmisdvzlR5I/AAAAAAAAB7Q/Y6Iv3LVCyLE/s640-Ic42/image007.png)  
 ![Create a build definition 2](https://lh3.googleusercontent.com/-UnQtw7hoAXo/Vmisd2atxJI/AAAAAAAAB5M/p2U9aP-JpGc/s640-Ic42/image008.png)
-3. Check the **Continuous integration : build each check-in**, and then click **Create**.  
+3. **Continuous integration : build each check-in**をクリック後、**Create**をクリックする。  
 ![Create a build definition 3](https://lh3.googleusercontent.com/-uGUinxG1H38/Vmisd0KoysI/AAAAAAAAB5o/GIwULQ_wjSs/s640-Ic42/image009.png)
-4. Click **+ Add build step…**.  
+4. **+ Add build step…**をクリックする。  
 ![Create a build definition 4](https://lh3.googleusercontent.com/--pT6AmxnvlE/VmiseO0UJZI/AAAAAAAAB60/thqTUUI3Ygc/s640-Ic42/image010.png)
-5. Click **Package**, then click **npm's** **Add**.  
+5. **Package**をクリック後、**npm**の**Add**をクリックする。  
 ![Create a build definition 5](https://lh3.googleusercontent.com/-mg4E7KIltXA/VmiseTzsk9I/AAAAAAAAB68/Kj8oifg3Plo/s640-Ic42/image011.png)
-6. Click **Build**, then click **gulp's** **Add**.  
+6. **Build**をクリック後、**gulp**の**Add**をクリックする。  
 ![Create a build definition 6](https://lh3.googleusercontent.com/-yJuKJYo4WjI/VmisejR6RkI/AAAAAAAAB5k/LIFCrcmo0F0/s640-Ic42/image012.png)
-7. Click **Test**, then click **Publish Test Results's** **Add**.  
+7. **Test**をクリック後、**Publish Test Results**の**Add**をクリックする。  
 ![Create a build definition 7](https://lh3.googleusercontent.com/-sYBD1QUkp3Y/VmisewX8zJI/AAAAAAAAB5w/931feG94WZg/s640-Ic42/image013.png)
-8. Click **Deploy**, then click **Azure Web App Deployment's** **Add**, and then click **Close**.  
+8. **Deploy**をクリック後、**Azure Web App Deployment**の**Add**をクリックし、**Close**をクリックする。  
 ![Create a build definition 8](https://lh3.googleusercontent.com/-lhfer9KmhPE/VmisfBVLWFI/AAAAAAAAB6A/0akt1eAPh8I/s640-Ic42/image014.png)
-9. Click **Publish Test Results**.
-10. Enter *test-results.xml* in the **Test Results Files** box.  
+9. **Publish Test Results**をクリックする。
+10. **Test Results Files**に*test-results.xml*を入力する。  
 ![Create a build definition 9](https://lh3.googleusercontent.com/-r8K2AHXPeAc/VmisfLp2tgI/AAAAAAAAB58/4sC6aqC8WlA/s640-Ic42/image015.png)
-11. Click **Azure Web App Deployment**.
-12. Select **Azure Subscription**.  
-Make sure the subscription you want to use is selected. If a subscription is not available, then add a service endpoint:
-  1. Click **Manage**.  
+11. **Azure Web App Deployment**をクリックする。
+12. **Azure Subscription**を選択する。  
+使用するサブスクリプションが選択されていることを確認し、サブスクリプションが使用できない場合は、以下の手順でサービスエンドポイントを追加する。
+  1. **Manage**をクリックする。  
   ![Create a build definition 10](https://lh3.googleusercontent.com/-AjUWeFhYhcs/VmisfQL4NBI/AAAAAAAAB6w/Aow_NVnjddA/s640-Ic42/image016.png)
-  2. Click **New Service Endpoint**, and then click **Azure**.  
+  2. **New Service Endpoint**をクリック後、**Azure**をクリックする。  
   ![Create a build definition 11](https://lh3.googleusercontent.com/-IYhV8uAPFtI/VmisgfvmswI/AAAAAAAAB6c/zlL4OTGhaxc/s640-Ic42/image017.png)
-  3. On the Add New Azure Connection dialog box:
-      1. Select **Certificate Base**.
-      2. Enter the name in the **Connection Name** box.
-      3. Click this [link](https://go.microsoft.com/fwlink/?LinkId=254432) to download your publishsettings xml file and then open the file.
-      4. Copy the ID and Name, ManagementCertificate from the file and paste them into the Add New Azure Connection dialog.  
+  3. Add New Azure Connectionダイアログボックスで:
+      1. **Certificate Base**を選択する。
+      2. **Connection Name**に名前を入力する。
+      3. [ここ](https://go.microsoft.com/fwlink/?LinkId=254432)をクリックし、publishsettings xmlファイルをダウンロード後、ファイルを開く。
+      4. 使用したいサブスクリプションのIDとName、ManagementCertificateの値をファイルからコピーし、それぞれAdd New Azure Connection dialogの項目にペーストする。  
       ![Create a build definition 12](https://lh3.googleusercontent.com/-Yi-NsbiKmh4/VmisgowbEtI/AAAAAAAAB6Y/lo7qrM0Wg6c/s640-Ic42/image018.png)
-      5. Click **OK**.
-13. Enter the name in the **Web App Name** box.  
-Tip: The name you enter must be unique or the name of an Azure Web App you have already created. Azure will create the Web App for you and add it to your subscription if it does not already exist.
-14. Enter *_package/package.zip* in the **Web Deploy Packagee**
-15. Click **Save**.  
+      5. **OK**をクリックする。
+13. **Web App Name**にWeb Appの名前を入力する。  
+Tip: ここであなたが入力した名前は一意か、既に作成済みのAzure Webアプリケーションの名前でなければならない。未作成の名前の場合、AzureはWebアプリケーションを作成し、サブスクリプションに追加する。
+14. **Web Deploy Packagee**に*_package/package.zip*を入力する。
+15. **Save**をクリックする。  
 ![Create a build definition 13](https://lh3.googleusercontent.com/-ytPyQVUuxic/VmisgiUYOHI/AAAAAAAAB6U/WZRO5PVdlwI/s640-Ic42/image019.png)
-16. Enter a name for the build definition in the **Name** box, and then click **OK**.
+16. **Name**にビルド定義の名前を入力後、**OK**をクリックする。
 
 ## Upload your application
 
