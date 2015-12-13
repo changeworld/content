@@ -105,7 +105,6 @@ For installation instructions for your platform, see the [Git download page](htt
 7. Open your team project in your web browser.
 8. Click **BUILD**.
 9. After a successful build, click build number and check your site: http://{your web app name}.azurewebsites.net  
-![Upload your application 1](../images/developers-receive-benefits-by-using-vsts/image020.png)  
 ![Upload your application 2](../images/developers-receive-benefits-by-using-vsts/image021.png)  
 ![Upload your application 3](../images/developers-receive-benefits-by-using-vsts/image022.png)  
 
