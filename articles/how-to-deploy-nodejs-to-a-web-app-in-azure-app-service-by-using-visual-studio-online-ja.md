@@ -117,12 +117,12 @@ For installation instructions for your platform, see the [Git download page](htt
 10. Check your site: http://{your new web app}.azurewebsites.net
 ![Publish your application 4](https://lh4.googleusercontent.com/-DGNFXXFbkaA/ViTJC8lNWSI/AAAAAAAABuA/xxEDVobJMLw/w2048-h350-no/image151018-21.png)
 
-## Publish changes to your application
+## アプリへの変更を発行する
 
-1. Open the **server.js** file in a text editor, and change 'Hello World\n' to 'Hello Azure\n'.
-2. Save the file.
-3. From the command line, change directories to the **helloworld** directory and run the following commands:
+1. *server.js*を開き、'Hello World\n' を 'Hello Azure\n'に変更します。
+2. ファイルを保存します。
+3. **helloworld**フォルダで、以下のコマンドをコマンドラインから実行します。
     $ git add .
     $ git commit -m "Modify Hello World -> Hello Azure"
     $ git push azure master
-4. Refresh the browser window that you navigated to the web app's URL. A browser displaying the 'Hello Azure' message.
+4. Wevアプリのページのウィンドウを更新すると、'Hello Azure'というメッセージが表示されます。
