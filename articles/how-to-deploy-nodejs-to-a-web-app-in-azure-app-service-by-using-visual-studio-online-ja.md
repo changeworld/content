@@ -43,23 +43,24 @@ Azure App ServiceにWeb Appsを作成し、Gitでのデプロイの有効化を�
 現在のWeb Appsの状態を確認するために、[URL]の欄のURLをクリックします。
 ![Enable Git publishing 5](https://lh4.googleusercontent.com/-1qbpll_dUuk/ViTJCxLpIaI/AAAAAAAABt8/iZRuhbCWISw/w1794-h1422-no/image151018-07.png)
 
-## Create a simple Node.js application
+## シンプルなNode.jsアプリケーションの作成
 
-In this section, you'll create a [server.js](https://nodejs.org/en/about/) file that contains a slightly modified version of the 'Hello World' example from [nodejs.org](https://nodejs.org/en/). The code adds **process.env.PORT** as the port to listen on when running in an Azure App Service.
+今回は説明のためにシンプルなNode.jsアプリケーションの作成します。
+[nodejs.org](https://nodejs.org/en/)にある’Hello World’を出力する[server.js](https://nodejs.org/en/about/)を使用します。
+nodejs.orgの例からAzure Web Appsで実行する際のリッスンするポートとして**process.env.PORT**を追加しています。
 
-1. Create a directory named **helloworld**.
-2. Use a text editor to create a new file named **server.js** in the **helloworld** directory.
-3. Copy the following code into the **server.js** file, and then save the file:  
+1. *helloworld*という名のディレクトリを作成します。
+2. テキスト エディターを使い、*helloworld*ディレクトリに*server.js*を作成します。
+3. *server.js*に以下のコードをコピー後、保存します。
     var http = require('http');
     var port = process.env.PORT || 1337;
     http.createServer(function (req, res) {
       res.writeHead(200, {'Content-Type': 'text/plain'});
       res.end('Hello World\n');
     }).listen(port);
-4. Open the command line, and use the following command to start the web app locally.  
+4. コマンド ラインから以下のコマンドを実行し、ローカルでNode.jsアプリケーションを起動させます。
     $ node server.js
-5. Open your web browser and navigate to http://localhost:1337.  
-A webpage that displays "Hello World" appears, as shown in the following screenshot.  
+5. Web ブラウザーを開き、 http://localhost:1337 にアクセスし、以下のスクリーンショットのようになっていることを確認します。  
 ![Create a simple Node.js application](https://lh3.googleusercontent.com/-BUKMgxa2Fbk/ViTJC9w0EQI/AAAAAAAABuA/E7ZL5YbdSpg/w2048-h308-no/image151018-08.png)
 
 ## Create a team project on Visual Studio Online and create a Build Definition
