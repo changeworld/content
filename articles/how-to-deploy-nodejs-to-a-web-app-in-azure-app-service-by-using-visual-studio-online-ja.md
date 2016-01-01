@@ -63,37 +63,43 @@ nodejs.orgの例からAzure Web Appsで実行する際のリッスンするポ�
 5. Web ブラウザーを開き、 http://localhost:1337 にアクセスし、以下のスクリーンショットのようになっていることを確認します。  
 ![Create a simple Node.js application](https://lh3.googleusercontent.com/-BUKMgxa2Fbk/ViTJC9w0EQI/AAAAAAAABuA/E7ZL5YbdSpg/w2048-h308-no/image151018-08.png)
 
-## Create a team project on Visual Studio Online and create a Build Definition
+## Visual Studio Onlineのチームプロジェクトの作成とビルド定義の作成
 
-1. Sign in to [Visual Studio Online](https://www.visualstudio.com/).
-2. Click **New**.
-3. Enter a name for the project in the **Project name** box.  
-Select a **Process template**.  
-Select **Git** from the **Version control** drop-down menu, and then Click **Create project**.  
+要求・要件の変更管理やタスクの変更管理、バグのトラッキングといった課題管理システム(ITS)、ソースコードの管理のためのバージョンコントロールシステム(VCS)、継続的インテグレーション(CI)などの機能をすべて持っているVisual Studio Onlineにチームプロジェクトを作成します。
+チームプロジェクトを作成後、ビルド定義を作成し、継続的インテグレーションと継続的デプロイを実現する準備をします。
+
+1. [Visual Studio Online](https://www.visualstudio.com/)のページからサインインします。
+2. **New**をクリックします。
+3. **Project name**にこのプロジェクトの名前を入力し、**Process template**、**Version control**を選択します。**Version control**はGitを選択してください。**Create project**をクリックします。  
 ![Create a team project on Visual Studio Online 1](https://lh4.googleusercontent.com/-7w5nPtL8G60/ViTJC4aKpnI/AAAAAAAABuA/Qo5sWVQPTf8/w2048-h1344-no/image151018-09.png)  
-In a short time, typically less than a minute, Visual Studio Online finishes creating the new team project.
-4. Click **Navigate to project**.  
+1分程経つとVisual Studio Onlineがチーム プロジェクトの作成を終え、表示が切り替わります。
+4. **Navigate to project**をクリックします。  
 ![Create a team project on Visual Studio Online 2](https://lh4.googleusercontent.com/-7cCyTP9bkew/ViTJC9hGXCI/AAAAAAAABuA/1ryWFKviATc/w1400-h1240-no/image151018-10.png)
-5. Click **BUILD**.  
+5. ビルド定義を作成するため、**BUILD**をクリックします。  
 ![Create a Build Definition 1](https://lh4.googleusercontent.com/-fLAjAC3vH7g/ViTJC5_mdQI/AAAAAAAABuA/gRmZle-J-Zw/w1800-h1288-no/image151018-11.png)
-6. Click **+**, and then click **Empty** to start with an empty definition, click **OK**.  
+6. **+**をクリックします。  
+今回はNode.jsのため、Visual StudioやXamarin、Xcodeではないので、**Empty**をクリックし、空のテンプレートを作成します。  
+その後、**OK**をクリックします。  
 ![Create a Build Definition 2](https://lh3.googleusercontent.com/-6Mk0Sndae-A/ViTJC6hXcoI/AAAAAAAABuA/2EaieFtnrsM/w1856-h1422-no/image151018-12.png)
-7. Click **+ Add build step…**, and then click **Utility**.
-8. Click **Command Line's** **Add** twice, and then click **Close**.  
+7. **+ Add build step…**をクリック後、**Utility**をクリックします。
+8. **Command Line**の横にある**Add**を2回クリックし、**Close**をクリックします。  
 ![Create a Build Definition 3](https://lh5.googleusercontent.com/-lVmcgGTSoOA/ViTJC6NHf8I/AAAAAAAABuA/hwA8DwiHBao/w2048-h1352-no/image151018-13.png)
-9. Click 1st **Command Line**.
-10. Enter **git** in the **Tool** box.  
-Enter **remote add azure https://{user name}:{password}@{your new web app}.scm.azurewebsites.net:443/{your new web app}.git** in the **Arguments** box.  
+9. 1つ目の**Command Line**をクリックします。
+10. **Tool**に*git*を入力します。  
+**Arguments**に**remote add azure https://{user name}:{password}@{your new web app}.scm.azurewebsites.net:443/{your new web app}.git**を入力します。  
+e.g. remote add azure https://[username]:[password]@[sitename].scm.azurewebsites.net:443/[sitename].git  
 ![Create a Build Definition 4](https://lh3.googleusercontent.com/-RnMiTePopIY/ViTJC6SindI/AAAAAAAABuA/OD7yoXXeAdQ/w2048-h900-no/image151018-14.png)
-11. Click 2nd **Command Line**.
-12. Enter **git** in the **Tool** box.  
-Enter **push azure master** in the **Arguments** box.
-13. Click **Triggers**.  
+11. 2つ目の**Command Line**をクリックします。
+12. **Tool**に*git*を入力します。  
+**Arguments**に**push azure master**を入力します。  
+13. **Triggers**をクリックします。  
 ![Create a Build Definition 5](https://lh3.googleusercontent.com/-am3txWmBKgY/ViTJCy0pbII/AAAAAAAABuA/5X2KFgy3Jas/w2048-h902-no/image151018-15.png)
-14. Check the **Continuous integration (CI)**, and then click **Save**.  
+14. **Continuous integration (CI)**にチェックをし、**Save**をクリックします。  
 ![Create a Build Definition 6](https://lh5.googleusercontent.com/-sdKZknViZYw/ViTJCwC7U7I/AAAAAAAABuA/BIntiP7VDS8/w2048-h924-no/image151018-16.png)
-15. Enter a name for the build definition in the **Name** box, and then click **OK**.  
+15. このbuild definitionの名前を**Name**に入力し、**OK**をクリックします。  
 ![Create a Build Definition 7](https://lh5.googleusercontent.com/-AtuY3U8g7IM/ViTJCzm28sI/AAAAAAAABuA/JLU4Uj9Q12I/w2048-h980-no/image151018-17.png)
+
+これで継続的インテグレーションと継続的デプロイの準備が整いました。
 
 ## アプリケーションを発行する
 
