@@ -1,17 +1,17 @@
-# How to create a simple Node.js application and deploy it to a web app in Azure App Service by using Visual Studio Online
+# シンプルな Node.js アプリケーションを作成し、Visual Studio Online を使用して Azure App Service の Web アプリにデプロイする方法
 
-This tutorial shows how to create a simple [Node.js](http://nodejs.org) application and deploy it to a [web app](https://azure.microsoft.com/ja-jp/documentation/articles/app-service-web-overview/) in [Azure App Service](https://azure.microsoft.com/ja-jp/documentation/articles/app-service-value-prop-what-is/) by using [Visual Studio Online](https://www.visualstudio.com/). The instructions in this tutorial can be followed on any operating system that is capable of running Node.js.
+このチュートリアルでは、シンプルな [Node.js](http://nodejs.org) アプリケーションを作成し、[Visual Studio Online](https://www.visualstudio.com/) を使用して [Azure App Service](https://azure.microsoft.com/ja-jp/documentation/articles/app-service-value-prop-what-is/) の [Web アプリ](https://azure.microsoft.com/ja-jp/documentation/articles/app-service-web-overview/)にデプロイする方法について説明します。このチュートリアルの手順は、Node.js を実行できる任意のオペレーティング システムで使用できます。
 
-You'll learn:
+学習内容:
 
-* How to create a web app in Azure App Service by using the Azure preview portal.
-* How to deploy a Node.js application to the web app using Visual Studio Online.
+* Azure プレビュー ポータルを使用して Azure App Service で Web アプリを作成する方法
+* Node.js アプリケーションを Visual Studio Online を使用して Web アプリにデプロイする方法
 
-The completed application writes a short "hello world" string to the browser.
+この手順を最後まで行うと、ブラウザーに "hello world" という短い文字列が出力されます。
 
 ![A browser displaying the 'Hello World' message.](https://lh4.googleusercontent.com/-DGNFXXFbkaA/ViTJC8lNWSI/AAAAAAAABuA/xxEDVobJMLw/w2048-h350-no/image151018-21.png)
 
-The overall picture will look like the following diagram.
+全体像としては以下のようになります。
 
 ![The overall picture.](https://lh5.googleusercontent.com/-g81UGpL3vrk/ViTJC1g4PyI/AAAAAAAABt8/fG3m-9Odfzg/w1400-h646-no/image151018-01.png)
 
